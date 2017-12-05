@@ -1,8 +1,11 @@
 package com.androidapp.test.mybank.ui.container;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 import com.androidapp.test.mybank.R;
 import com.androidapp.test.mybank.ui.base.BaseActivity;
@@ -23,7 +26,16 @@ public class ContainerActivity extends BaseActivity implements ContainerView {
 
         containerPresenter = new ContainerPresenter();
         containerPresenter.attachView(this);
-        addFragment(R.id.fragment_container, new LoginFragment(), LoginFragment.FRAGMENT_TAG);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, new LoginFragment(), LoginFragment.FRAGMENT_TAG);
+        fragmentTransaction.addToBackStack(LoginFragment.FRAGMENT_TAG);
+        fragmentTransaction.commit();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            getSupportFragmentManager().getFragments().contains(LoginFragment.class);
+        }
+
     }
 
     private void initUI() {
