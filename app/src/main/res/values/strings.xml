@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">My Bank</string>
+    <string name="accept">Accept</string>
+    <string name="btn_login">Login</string>
+    <string name="field_customer_id">Customer Id</string>
+    <string name="field_password">Password</string>
+    <string name="txt_label_or">-------------------- or --------------------</string>
+    <string name="link_sign_up">Sign up</string>
+    <string name="sign_up_button">Sign up now¡</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_customer_id">Customer ID</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_customer_product_id">type the id associated with the client</string>
+    <string name="invalid_product_data">no information from product for identifier</string>
+    <string name="no_product_data">product identifier void or null</string>
+    <string name="label_title_menu_product">Products</string>
+    <string name="label_desc_menu_product">Check data of all your products</string>
+    <string name="label_title_menu_transaction">Transactions</string>
+    <string name="label_desc_menu_transaction">Save or check your transactions</string>
+    <string name="last_transactions">Last transactions</string>
+    <string name="hint_tx_query_prod">Select number of product for check last transactions</string>
+    <string name="no_transactions_available">No transactions to show</string>
+    <string name="option_save_tx">save transaction</string>
+    <string name="save_rejected_code">unknown</string>
+    <string name="txt_btn_save_transaction">Save transaction</string>
+    <string name="hint_type">type</string>
+    <string name="hint_amount">amount</string>
+    <string name="hint_channel">channel id</string>
+    <string name="hint_product_number">product_number</string>
+    <string name="validate_fields_tx">Please review all fields before to continue on save transaction</string>
+    <string name="label_customers_product_selector">Select Customer\'s product</string>
+    <string name="info_customer_product_empty">No product data</string>
+    <string name="option_net_prefs">preferencias</string>
+
+</resources>

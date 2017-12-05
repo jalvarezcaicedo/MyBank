@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appname="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.androidapp.test.mybank.ui.container.ContainerActivity">
+
+    <item
+        android:id="@+id/menu_net_prefs"
+        android:icon="@drawable/ic_build_white_24dp"
+        android:title="@string/option_net_prefs"
+        appname:showAsAction="always" />
+
+</menu>

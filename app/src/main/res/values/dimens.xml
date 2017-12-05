@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="regular_text_size">25sp</dimen>
+    <dimen name="height_register_field">52dp</dimen>
+    <dimen name="margin_top_register_fields">3dp</dimen>
+    <dimen name="menu_card_elevation">5dp</dimen>
+    <dimen name="regular_margin">15dp</dimen>
+    <dimen name="simple_margin_top">5dp</dimen>
+</resources>

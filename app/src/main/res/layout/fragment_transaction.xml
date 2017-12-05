@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/label_transaction_query_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/hint_tx_query_prod"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/transaction_query_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_transaction_query_product"
+            android:layout_margin="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/simple_margin_top" />
+
+        <TextView
+            android:id="@+id/label_last_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transaction_query_product"
+            android:text="@string/last_transactions"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_last_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_last_transactions"
+            android:layout_marginTop="@dimen/regular_margin" />
+
+        <TextView
+            android:id="@+id/empty_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/label_last_transactions"
+            android:gravity="center"
+            android:text="@string/no_transactions_available"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
